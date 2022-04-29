@@ -1,5 +1,5 @@
 def selection_sort(a):
-    
+
     n = len(a)
 
     for i in range(n):
@@ -11,4 +11,4 @@ def selection_sort(a):
 
     return a
 
-print(sort([5,1,2,8,4,7]))
+print(selection_sort([5,1,2,8,4,7]))
