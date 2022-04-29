@@ -1,11 +1,11 @@
 def insertion_sort(a):
 
     for i in range(1, len(a)):
-        move_forward(i, a)
+        move_forward_if_smaller(i, a)
     return a
 
 
-def move_forward(i, a):
+def move_forward_if_smaller(i, a):
     val = a[i]
     while i >= 1 and val < a[i-1]:
         a[i] = a[i-1]
