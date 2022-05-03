@@ -5,7 +5,7 @@ def quick_sort(a, low=0, high=None):
 
     if low < high:
         pi = partition_hps(a, low, high)
-        quick_sort(a, low, pi - 1)
+        quick_sort(a, low, pi)
         quick_sort(a, pi + 1, high)
 
     return a

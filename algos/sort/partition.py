@@ -26,12 +26,12 @@ def partition_hps(a, lo, hi):
     pivot = a[lo]
     i, j = lo, hi
 
-    while (True):
+    while True:
 
-        while (a[i] < pivot):
+        while a[i] < pivot:
             i += 1
 
-        while (a[j] > pivot):
+        while a[j] > pivot:
             j -= 1
 
         if i >= j:
