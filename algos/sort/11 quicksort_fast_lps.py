@@ -1,10 +1,10 @@
-from partition import naive_partition
+from partition import partition_lps
 
 def quick_sort(a, low=0, high=None):
     if high is None: high = len(a) - 1
 
     if low < high:
-        pi = naive_partition(a, low, high)
+        pi = partition_lps(a, low, high)
         quick_sort(a, low, pi - 1)
         quick_sort(a, pi + 1, high)
 
