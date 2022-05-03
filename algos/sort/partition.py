@@ -9,16 +9,16 @@ def naive_partition(a, lo, hi):
 def partition_lps(a, lo, hi):
 
     pivot = a[hi]
-    left = lo
+    i = lo
 
-    for right in range(lo, hi):
-        if a[right] < pivot:
-            a[left], a[right] = a[right], a[left]
-            left += 1
+    for j in range(lo, hi):
+        if a[j] < pivot:
+            a[i], a[j] = a[j], a[i]
+            i += 1
 
-    a[left], a[hi] = a[hi], a[left]
+    a[i], a[hi] = a[hi], a[i]
 
-    return left
+    return i
 
 
 def partition_hps(a, lo, hi):
