@@ -1,6 +1,8 @@
 import heapq
 
-minHeap = [5,1,2,8,4,7]
-heapq.heapify(minHeap * -1)
+maxHeap = [5,1,2,8,4,7]
 
-print(heapq.heappop(minHeap))
+maxHeap = [-x for x in maxHeap]
+heapq.heapify(maxHeap)
+
+print(heapq.heappop(maxHeap) * -1)
