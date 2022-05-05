@@ -1,4 +1,5 @@
 [Link 1](https://productive-horse-bb0.notion.site/Roblox-Karat-2021-5-2022-2-9b07dcbba3634de080c3854c1293d0dc)
+[Link 2](https://www.jianshu.com/p/fdbcba5fe5bc)
 
 - Given a value and looply divide by 10 for the digits. What is the complexity of this method?
 
