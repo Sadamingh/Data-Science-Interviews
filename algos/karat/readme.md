@@ -3,8 +3,10 @@
 
 - Given a value and looply divide by 10 for the digits. What is the complexity of this method?
 
-- Given two functions, when nlogm is faster than m + n?
+- Given two functions of snapshot, one is nlogm and the other is m + n, which one is more efficient?
 
-- If you want to design a function randomly output a sentence of a textfile, can we change the file to bytes, then randomly pick a bytes and then find the newlines before and behind this bytes. The output is the sentence between these two lines. Is that going to work?
+- If you want to design a function randomly output a sentence of a textfile, can we change the file to bytes, then randomly pick a bytes and then find the newlines before and behind this bytes (parse). The output is the sentence between these two lines. Is that going to work?
+
+No becaue the length of lines are not the same so not random enough.
 
 - If you want to design a function randomly output a file under a user, can we get all the file size, then randomly choose a byte and find one file with this size?
