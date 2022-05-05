@@ -4,10 +4,10 @@
 # 4    5         6
 #                 \
 #                  7
-# Check if two nodes shares the same ancestor
+# Return the furthest ancestor
 # Case 1 --------------------
-# input = 4, 5
-# output = True
+# input = 7
+# output = 3
 # Case 2 --------------------
-# input = 2, 6
-# output = False
+# input = 4
+# output = 1

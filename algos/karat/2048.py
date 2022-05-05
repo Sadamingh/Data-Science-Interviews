@@ -1,3 +1,4 @@
+# Implement a game like 2048, left swipe
 # Case 1 --------------------
 # input = [2,2,2,2]
 # output = [4,0,0,0]
