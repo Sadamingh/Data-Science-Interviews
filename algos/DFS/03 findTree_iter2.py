@@ -11,16 +11,14 @@ def find_tree(root, target):
     if not root: return
 
     stack = deque()
-    stack.append(root)
 
-    while stack:
+    while stack or root:
 
         while root:
             stack.append(root)
             root = root.left
 
         curr = stack.pop()
-        print(curr.val, end=", ")
 
         if target == curr.val:
             return True
