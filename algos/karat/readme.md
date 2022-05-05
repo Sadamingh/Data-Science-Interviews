@@ -7,6 +7,6 @@
 
 - If you want to design a function randomly output a sentence of a textfile, can we change the file to bytes, then randomly pick a bytes and then find the newlines before and behind this bytes (parse). The output is the sentence between these two lines. Is that going to work?
 
-No becaue the length of lines are not the same so not random enough.
+No because the length of lines are not the same so not random enough.
 
 - If you want to design a function randomly output a file under a user, can we get all the file size, then randomly choose a byte and find one file with this size?
