@@ -8,8 +8,7 @@ print(bTree)
 
 def find_tree(root, target):
 
-    if not root:
-        return
+    if not root: return
 
     stack = deque()
     stack.append(root)
