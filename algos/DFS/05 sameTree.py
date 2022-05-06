@@ -7,36 +7,31 @@ tree = [3,1,4,None,None,2]
 bTree1 = binarytree.build(tree)
 bTree2 = binarytree.build(tree)
 bTree3 = binarytree.build([5, 2, 7, 1, 4, None, 14])
+bTree4 = binarytree.build([1])
+bTree5 = binarytree.build([1, None, 2])
 
-def fixTree(root1, root2):
-    if root1 is None and root2 is None:
-        return True
-    elif root1 is None or root2 is None:
-        return False
+def sameTree(root1, root2):
 
-    stack1 = deque()
-    stack2 = deque()
+    stack = deque()
+    stack.append((root1, root2))
 
-    while (stack1 and stack2) or (root1 and root2):
+    while stack:
 
-        while root1:
-            stack1.append(root1)
-            root1 = root1.left
+        p, q = stack.pop()
 
-        while root2:
-            stack2.append(root2)
-            root2 = root2.left
-
-        curr1 = stack1.pop()
-        curr2 = stack2.pop()
-
-        if curr1.val != curr2.val:
+        if not p and not q:
+            continue
+        elif not p or not q:
+            return False
+        elif p.val != q.val:
             return False
 
-        root1 = curr1.right
-        root2 = curr2.right
+        stack.append((p.right, q.right))
+        stack.append((p.left, q.left))
 
     return True
 
-print(fixTree(bTree1, bTree2))
-print(fixTree(bTree1, bTree3))
+
+print(sameTree(bTree1, bTree2))
+print(sameTree(bTree1, bTree3))
+print(sameTree(bTree4, bTree5))
