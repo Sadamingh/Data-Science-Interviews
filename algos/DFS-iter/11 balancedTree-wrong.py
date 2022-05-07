@@ -34,5 +34,3 @@ def isBalancedTree(root):
         return False
 
     return max_leaf_depth - min_leaf_depth <= 2
-
-print(isBalancedTree(bTree))
