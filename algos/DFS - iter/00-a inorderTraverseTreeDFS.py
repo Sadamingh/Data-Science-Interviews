@@ -13,6 +13,7 @@ def traverse_tree(root):
     if not root: return
 
     stack = deque()
+    traversal = deque()
 
     while stack or root:
 
@@ -21,12 +22,10 @@ def traverse_tree(root):
             root = root.left
 
         curr = stack.pop()
-
-        print(curr.val, end=",")
-
+        traversal.append(curr.val)
         root = curr.right
 
-    print('\n')
+    print(traversal)
 
 traverse_tree(bTree)
 traverse_tree(BST)
