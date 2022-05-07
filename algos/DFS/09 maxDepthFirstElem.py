@@ -24,9 +24,10 @@ def maxDepth(root):
 
         if not curr: continue
 
+        prev_max_depth = max_depth
         max_depth = max(curr_depth, max_depth)
 
-        if max_depth == curr_depth:
+        if max_depth == curr_depth and prev_max_depth != max_depth:
             ans = curr.val
 
         stack.append((curr_depth + 1, curr.right))
