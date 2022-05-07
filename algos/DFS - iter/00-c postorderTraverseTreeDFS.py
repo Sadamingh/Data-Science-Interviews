@@ -6,7 +6,7 @@ bTree = binarytree.build(tree)
 tree = [5, 2, 7, 1, 4, None, 14]
 BST = binarytree.build(tree)
 
-print(BST)
+print(bTree)
 
 def traverse_tree(root):
 
@@ -21,9 +21,9 @@ def traverse_tree(root):
         curr = stack.pop()
 
         if curr:
-            traversal.append(curr.val)
-            stack.append(curr.right)
+            traversal.appendleft(curr.val)
             stack.append(curr.left)
+            stack.append(curr.right)
 
     print(traversal)
 
