@@ -7,6 +7,8 @@ print(bTree)
 
 def find_tree(root, target):
 
+    if not root: return False
+
     print(root.val, end=", ")
 
     if root.val == target:
@@ -29,3 +31,4 @@ print(find_tree(bTree, 4))
 print(find_tree(bTree, 6))
 print(find_tree(bTree, 7))
 print(find_tree(bTree, 10))
+print(find_tree(binarytree.build([]), 10))
