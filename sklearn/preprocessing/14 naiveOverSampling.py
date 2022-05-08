@@ -7,3 +7,10 @@ X, y = make_classification(n_samples=5000, n_features=2, n_informative=2,
                            class_sep=0.8, random_state=0)
 
 print(Counter(y))
+
+from imblearn.over_sampling import RandomOverSampler
+
+ros = RandomOverSampler()
+X, y = ros.fit_resample(X, y)
+
+print(Counter(y))
