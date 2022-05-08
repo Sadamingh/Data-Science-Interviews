@@ -1,3 +1,4 @@
+# Good to use for noisy data
 import numpy as np
 from sklearn.preprocessing import KBinsDiscretizer
 
