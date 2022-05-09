@@ -9,4 +9,5 @@ X = StandardScaler().fit_transform(X)
 logit = LogisticRegression()
 logit.fit(X, y)
 
+print(logit.predict_proba(X))
 print(logit.predict(X))
